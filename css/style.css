@@ -1,0 +1,131 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #27282B;
+    box-shadow: 0px 0px 21px 0px #0005 inset;
+    border-radius: 100vh;
+}
+::-webkit-scrollbar-track {
+    background-color: #32383E;
+}
+body{
+    font-family: "Nerko One", cursive;
+    --bColor:rgba(0, 0, 0, 0.175);
+}
+#home{
+    min-height: 100vh;
+}
+header img{
+    max-height: 30vh;
+    object-fit: cover;
+}
+nav h5 img{
+    max-height: 40px;
+}
+nav{
+    background-color: rgb(58, 73, 123) !important;
+    margin-inline: auto;
+    margin-top: -30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+    z-index: 9999;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: #09c !important;
+}
+.nav-link {
+    font-size: 12.5px;
+    transition: color 0.5s;
+}
+.nav-link:hover {
+    color: #09c !important;
+}
+figure{
+    border: solid 1px;
+    border-color: var(--bColor) var(--bColor) transparent var(--bColor);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.innerCol{
+    filter: grayscale(0.7);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.innerCol:hover{
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+.innerCol .bContent{
+    border: solid 1px var(--bColor);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.innerCol .bContent span{
+    background-color: #32383E;
+}
+
+/* loading page */
+.center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99999;
+  }
+  .wave {
+    width: 5px;
+    height: 100px;
+    background: linear-gradient(45deg, cyan, #fff);
+    margin: 10px;
+    animation: wave 1s linear infinite;
+    border-radius: 20px;
+  }
+  .wave:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .wave:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .wave:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  .wave:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  .wave:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  .wave:nth-child(7) {
+    animation-delay: 0.6s;
+  }
+  .wave:nth-child(8) {
+    animation-delay: 0.7s;
+  }
+  .wave:nth-child(9) {
+    animation-delay: 0.8s;
+  }
+  .wave:nth-child(10) {
+    animation-delay: 0.9s;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+   
+/* Details Game */
+#sDetails{
+    min-height: 100vh;
+    background-color: #27282B;
+
+
+}
